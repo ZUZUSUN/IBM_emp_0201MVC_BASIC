@@ -43,6 +43,7 @@
 	<ul>
 		<c:forEach var="message" items="${errorMsgs}">
 			<li style="color:red">${message}</li>
+			
 		</c:forEach>
 	</ul>
 </c:if>
@@ -53,7 +54,7 @@
   
   <li>
     <FORM METHOD="post" ACTION="emp.do" >
-        <b>輸入員工編號 (如7001):</b>
+        <b>輸入員工編號 (如7010):</b>
         <input type="text" name="empno">
         <input type="hidden" name="action" value="getOne_For_Display">
         <input type="submit" value="送出">                   <h4>(資料格式驗證  by Controller ).</h4> 
